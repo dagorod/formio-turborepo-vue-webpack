@@ -3,7 +3,6 @@ import { createApp, h } from 'vue'
 import App from './App.vue'
 
 
-console.log('dago is hrter')
 const vueLifecycles = singleSpaVue({
   createApp,
   appOptions: {
