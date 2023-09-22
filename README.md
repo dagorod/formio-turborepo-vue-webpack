@@ -21,6 +21,8 @@ npm run dev
 ```
 
 The project will run at `localhost:9000` and display a blank screen where it should display the form.io builder. The console should display the following issue
+![Screen Shot 2023-09-22 at 4 25 18 PM](https://github.com/dagorod/formio-turborepo-vue-webpack/assets/58822367/5e3662da-4ef7-4a26-82ae-59b1a3ce0a2d)
+
 
 ### The working app
 
