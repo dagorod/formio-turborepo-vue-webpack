@@ -1,11 +1,9 @@
 import { registerApplication, start } from "single-spa";
-console.log('test')
 registerApplication({
-  name: "web",
+  name: "formiovite",
   app: () => import('http://localhost:3001/src/main.js'),
-  activeWhen: ["/"],
+  activeWhen: ['/'],
 });
-
 
 start({
   urlRerouteOnly: true,

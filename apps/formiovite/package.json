@@ -1,5 +1,5 @@
 {
-  "name": "web",
+  "name": "formiovite",
   "version": "0.0.0",
   "main": "./src/main.ts",
   "scripts": {
@@ -9,6 +9,7 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },
   "dependencies": {
+    "@formio/vue": "^5.0.0-rc.1",
     "single-spa-vue": "^3.0.0",
     "vue": "^3.2.31"
   },

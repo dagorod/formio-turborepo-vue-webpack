@@ -1,28 +1,26 @@
-# Turborepo Vue 3 Starter
+## What is this project?
 
-This is a turborepo vue 3 starter repository.
+This is a turbo repo project which contains three main apps:
 
-<p align="center"><a href="https://vuejs.org" target="_blank" rel="noopener noreferrer"><img width="100" src="https://vuejs.org/images/logo.png" alt="Vue logo"></a></p>
+- Root config: On a single spa project, you need to have a root project which will run all other apps simultaneously.
+- Formiovite: An app which uses single-spa-vue, vite, and tries to load the formBuilder but fails.
+- Workingformiovite: An app which only has vite and form.io and runs successfully.
 
-<p align="center"><a href="https://turborepo.org/" target="_blank" rel="noopener noreferrer"><img width="300" src="https://user-images.githubusercontent.com/4060187/106504110-82f58d00-6494-11eb-87b7-a16d4f68bc5a.png" alt="Turborepo logo"></a></p>
+### To run the issue
 
-## What's inside?
-
-This turborepo uses [Yarn](https://classic.yarnpkg.com/lang/en/) as a package manager. It includes the following packages/apps:
-
-### Apps and Packages
-
-- `docs`: a [Vue.js](https://vuejs.org/) app - `port: 3000 `
-- `web`: another [Vue.js](https://vuejs.org/) app - `port: 3001`
-- `tsconfig`: `tsconfig.json`s used throughout the monorepo
-
-### Build
-
-To build all apps and packages, run the following command:
+Run the following command at root level.
 
 ```
-yarn run build
+npm i
 ```
+
+Run the following command to spin up the server.
+
+```
+npm run dev
+```
+
+The project will run at `localhost:9000` and display a blank screen where it should display the form.io builder. The console should display the following issue
 
 ### Develop
 
@@ -39,7 +37,7 @@ Turborepo can use a technique known as [Remote Caching (Beta)](https://turborepo
 By default, Turborepo will cache locally. To enable Remote Caching (Beta) you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
 
 ```
-npx turbo login
+npm install
 ```
 
 This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
@@ -49,14 +47,3 @@ Next, you can link your Turborepo to your Remote Cache by running the following 
 ```
 npx turbo link
 ```
-
-## Useful Links
-
-Learn more about the power of Turborepo:
-
-- [Pipelines](https://turborepo.org/docs/features/pipelines)
-- [Caching](https://turborepo.org/docs/features/caching)
-- [Remote Caching (Beta)](https://turborepo.org/docs/features/remote-caching)
-- [Scoped Tasks](https://turborepo.org/docs/features/scopes)
-- [Configuration Options](https://turborepo.org/docs/reference/configuration)
-- [CLI Usage](https://turborepo.org/docs/reference/command-line-reference)
