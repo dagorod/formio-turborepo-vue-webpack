@@ -1,0 +1,31 @@
+{
+  "name": "root-config",
+  "main": "./src/main.js",
+  "scripts": {
+    "dev": "vite --port 9000",
+    "build": "vite build",
+    "preview": "vite preview --port 5050",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
+  },
+  "devDependencies": {
+    "@rushstack/eslint-patch": "^1.1.0",
+    "@types/systemjs": "^6.1.1",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.31.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-vue": "^9.8.0",
+    "eslint-plugin-vue-scoped-css": "^2.2.0",
+    "eslint-plugin-vuejs-accessibility": "^2.0.0",
+    "prettier": "^2.8.1",
+    "vite": "^4.3.5",
+    "vite-plugin-ejs": "^1.6.4",
+    "vite-plugin-vuetify": "^1.0.2",
+    "vue-tsc": "^1.6.4"
+  },
+  "dependencies": {
+    "single-spa": "^5.9.3",
+    "vite-plugin-single-spa": "^0.2.0"
+  }
+}
